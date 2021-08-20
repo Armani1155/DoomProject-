@@ -25,7 +25,7 @@ public class App {
 
     public static void homework() {
         System.out.println("You come home from 1st grade. Your mom tells you 'You need to do your math homework!' ");
-        System.out.println("Do you do your math homework?");
+        System.out.println("Do you do your math homework?"); // add a yes or no prompt
 
         BinaryChoice.choice(person, "Yes", "No", 5, -5, "You begin doing your math homework.",
                 "You get a spanking for not studying. Your mom then forces you to study math.",
@@ -37,7 +37,7 @@ public class App {
 
     public static void pencil() {
         System.out.println("You head to class but your pencil breaks. ");
-        System.out.println("Do you steal your classmates pencil?");
+        System.out.println("Do you steal your classmates pencil?"); // add a yes or no prompt
 
         BinaryChoice.choice(person, "Yes", "No", -5, 0, "Your classmate sees you and tells the teacher",
                 "You ask the teacher and the teacher gives you a pencil.", BinaryChoice.REP_MODIFY);
@@ -48,7 +48,7 @@ public class App {
 
     public static void tag() {
         System.out.println("A kid comes to you and tags you.");
-        System.out.println("Choose between STRANGER DANGER! or COME BACK HERE");
+        System.out.println("Choose between STRANGER DANGER! or COME BACK HERE"); // puts a 1 on SD, puts a 2 on CBH
 
         BinaryChoice.choice(person, "STRANGER DANGER", "COME BACK HERE", -5, 5,
                 "You punch the kid for no apparent reason.", "You befriend the kid", BinaryChoice.REP_MODIFY);
