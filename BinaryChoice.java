@@ -1,5 +1,8 @@
-public class BinaryChoice implements Choice {
-    // public static final enum
+//binary choice - we can pass in 2 choices and it'll either add or reduce reputation, iq, or fitness based on that.
+
+public class BinaryChoice implements IChoice {
+    // types of things we can modify - some of these are not used, but they'll be
+    // used later
     public static final int REP_MODIFY = 2;
     public static final int IQ_MODIFY = 1;
     public static final int FIT_MODIFY = 0;
@@ -8,12 +11,15 @@ public class BinaryChoice implements Choice {
             String responseForChoice1, String responseForChoice2, int type) {
         TerminalColor.printLine("You can also press 1 or 2 to choose options", TerminalColor.PURPLE_BRIGHT);
         String response = System.console().readLine();
-        switch (type) {
+        switch (type) { // alternative for if statement that compares the type with the following cases
+            // checks if we want to modify the reputation, iq, or fitness
             case REP_MODIFY:
-                if (response.equalsIgnoreCase(choice1) || response.contains("1")) {
+                if (response.equalsIgnoreCase(choice1) || response.contains("1")) { // checks if response is choice name
+                                                                                    // OR is 1
                     person.setReputation(person.getReputation() + choice1Value);
                     System.out.println(responseForChoice1);
-
+                    // this mess is just to make it look more professional - it wouldn't be nice to
+                    // say "you've gained -5 points!"
                     if (choice1Value > 0) {
                         TerminalColor.printLine("You've gained " + Math.abs(choice1Value)
                                 + " Reputation Points, for a total of " + person.getReputation() + " points!",
