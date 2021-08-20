@@ -4,9 +4,9 @@ public class BinaryChoice implements Choice {
     public static final int IQ_MODIFY = 1;
     public static final int FIT_MODIFY = 0;
 
-    // private
     public static final void choice(Person person, String choice1, String choice2, int choice1Value, int choice2Value,
             String responseForChoice1, String responseForChoice2, int type) {
+        TerminalColor.printLine("You can also press 1 or 2 to choose options", TerminalColor.PURPLE_BRIGHT);
         String response = System.console().readLine();
         switch (type) {
             case REP_MODIFY:
