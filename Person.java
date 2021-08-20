@@ -4,7 +4,7 @@ public class Person {
   private int age = 7;
   private int reputation = 25;
 
-  public String getName() {
+  public String getName() { // future implentation. Allows player to choose their name!
     return name;
   }
 
