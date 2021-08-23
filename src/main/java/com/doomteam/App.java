@@ -9,6 +9,7 @@ public class App {
     static Console c = System.console();
     static Person person = new Person();
 
+
     public static void chooseGender() {
 
         System.out.println("What gender would you like to be? Female, Male or Non-binary");
