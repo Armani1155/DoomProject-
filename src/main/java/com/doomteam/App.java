@@ -1,10 +1,14 @@
+package com.doomteam;
 
 import java.io.Console;
 
+import com.doomteam.choices.BinaryChoice;
+import com.doomteam.utility.TerminalColor;
+
 public class App {
     static Console c = System.console();
-    static BinaryChoice binaryChoice = new BinaryChoice();
     static Person person = new Person();
+
 
     public static void chooseGender() {
 

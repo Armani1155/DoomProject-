@@ -1,3 +1,5 @@
+package com.doomteam;
+
 public class Person {
   private String name;
   private int gender;

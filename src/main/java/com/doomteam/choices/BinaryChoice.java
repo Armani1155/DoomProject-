@@ -1,3 +1,8 @@
+package com.doomteam.choices;
+
+import com.doomteam.Person;
+import com.doomteam.utility.TerminalColor;
+
 //binary choice - we can pass in 2 choices and it'll either add or reduce reputation, iq, or fitness based on that.
 
 public class BinaryChoice implements IChoice {
